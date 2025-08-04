@@ -1,13 +1,3 @@
-module "my_ec2" {
-  source        = "./modules/ec2-instance"
-  ami           = "ami-0de716d6197524dd9"  # example AMI, replace with yours
-  instance_type = "t2.micro"
-  subnet_id     = "subnet-0a08b19b71d53c86a"        # replace with your subnet id
-  instance_name = "my-terraform-instance"
-}
-
-
-
 
 # This below code is used to create mutliple vpcs using for each concept
 #  This file should be in varibales.tf
@@ -44,5 +34,3 @@ module "my_ec2" {
 #     Name = each.key
 #   }
 # }
-
-
